@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 
 import javax.swing.BorderFactory;
@@ -91,24 +92,25 @@ public class baitap5 extends JFrame{
 		
 		// tạo chọn tác vụ 
 		JPanel pnSouth = new JPanel();  // tạo vùng south
+		
 		pnSouth.setLayout(new BoxLayout(pnSouth	, BoxLayout.X_AXIS)); //chỉnh kiểu south
 		pnBorder.add(pnSouth,BorderLayout.SOUTH);   //add vào border
-		Border southBorder =BorderFactory.createLineBorder(Color.PINK);  //chỉnh màu đường kẻ 
+		Border southBorder =BorderFactory.createLineBorder(Color.PINK);//chỉnh màu đường kẻ
+		
 		TitledBorder southTitleBorder = new TitledBorder(southBorder, "Chọn tác vụ ");  // tạo tiêu đề của south
 		pnSouth.setBorder(southTitleBorder);
 		pnSouth.setPreferredSize(new Dimension(0,60));
 		
-		// tạo button cho pnsouth
-				JButton btngiai = new JButton("Giải");
-				JButton btnxoatrang = new JButton("Xóa Trắng");
-				JButton btnthoat = new JButton("Thoát");
+		 //tạo button cho pnsouth
+			JButton btngiai = new JButton("Giải");
+			JButton btnxoatrang = new JButton("Xóa Trắng");
+			JButton btnthoat = new JButton("Thoát");
 				// add nút 
 				pnSouth.add(btngiai);
 				pnSouth.add(Box.createVerticalStrut(20));
 				pnSouth.add(btnxoatrang);
 				pnSouth.add(Box.createVerticalStrut(20));
 				pnSouth.add(btnthoat);
-				pnSouth.add(Box.createVerticalStrut(20));
 				setVisible(true);
 				setLocationRelativeTo(null);
 	}
