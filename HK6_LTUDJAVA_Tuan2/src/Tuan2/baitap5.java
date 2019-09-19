@@ -36,6 +36,7 @@ public class baitap5 extends JFrame{
 		//chỉnh font chữ của tiêu đề 
 		Font ft =new Font("Arial",Font.BOLD, 25); 
 		lblTieuDe.setFont(ft);
+		pnNorth.setBackground(Color.LIGHT_GRAY);
 		
 		
 		//add vào để chạy chương trình 
@@ -80,10 +81,12 @@ public class baitap5 extends JFrame{
 		JLabel lblq=new JLabel("Kết quả :"); 
 		pnq.add(lblq);
 		pnCenter.add(pnq);
+		
 		JPanel pnqs =new JPanel();
 		final JTextField txtq =new JTextField(15);
 		pnqs .add(txtq);
 		pnCenter.add(pnqs);
+		setVisible(false);
 		
 		
 		// tạo chọn tác vụ 
@@ -103,9 +106,11 @@ public class baitap5 extends JFrame{
 				pnSouth.add(btngiai);
 				pnSouth.add(Box.createVerticalStrut(20));
 				pnSouth.add(btnxoatrang);
-				//pnSouth.add(Box.createVerticalStrut(20));
+				pnSouth.add(Box.createVerticalStrut(20));
 				pnSouth.add(btnthoat);
-				pnSouth.add(Box.createVerticalStrut(20));		
+				pnSouth.add(Box.createVerticalStrut(20));
+				setVisible(true);
+				setLocationRelativeTo(null);
 	}
 	public static void main(String[] args) {
 		new baitap5("Giải phương trình bậc 2");
