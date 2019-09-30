@@ -50,7 +50,7 @@
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    ImageIcon icon = new ImageIcon(&quot;images/bg.png&quot;);     public void paintComponent(Graphics g){ &#xa;        Dimension d = getSize(); &#xa;        g.drawImage(icon.getImage(), 0, 0, d.width, d.height, null);         setOpaque(false);         super.paintComponent(g);     }   &#xa;}&#xa;"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    ImageIcon icon = new ImageIcon(&quot;C:\\Users\\Yuumi\\Desktop\\123456.jpg&quot;);     public void paintComponent(Graphics g){&#xa;        Dimension d = getSize();&#xa;        g.drawImage(icon.getImage(), 0, 0, d.width, d.height, null);         setOpaque(false);         super.paintComponent(g);     }&#xa;}&#xa;"/>
           </AuxValues>
 
           <Layout>

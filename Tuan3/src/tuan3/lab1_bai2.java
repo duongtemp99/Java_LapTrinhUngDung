@@ -33,7 +33,7 @@ public class lab1_bai2 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel(){
-            ImageIcon icon = new ImageIcon("images/bg.png");     public void paintComponent(Graphics g){
+            ImageIcon icon = new ImageIcon("C:\\Users\\Yuumi\\Desktop\\123456.jpg");     public void paintComponent(Graphics g){
                 Dimension d = getSize();
                 g.drawImage(icon.getImage(), 0, 0, d.width, d.height, null);         setOpaque(false);         super.paintComponent(g);     }
         }
